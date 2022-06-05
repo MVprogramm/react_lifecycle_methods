@@ -43,7 +43,7 @@ class App extends React.Component {
           </button>
         </div>
         
-        {<Life isUpdate={this.state.isUpdate}/>}
+        {this.state.rendering && <Life isUpdate={this.state.isUpdate}/>}
       </div>
     )
   }    

@@ -17,7 +17,17 @@ class Life extends React.Component {
     return true;
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    console.log('componentDidUpdate(prevProps, prevState): some updates based on new props');
+  }
+
+  componentWillUnmount() {
+    console.log('componentWillUnmount(): cleanup before DOM related to component will be removed');
+  }
+
   render() {
+    console.log('return React element to build DOM');
+
     return null;
   }
 }
