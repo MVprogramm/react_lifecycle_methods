@@ -8,7 +8,7 @@ class Life extends React.Component {
   }
 
   componentDidMount() {
-    console.log('compponentDidMount: API calls, subscriptions');
+    console.log('componentDidMount: API calls, subscriptions');
   }
 
   render() {
